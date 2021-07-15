@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bookshelf Apps</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+    <div class="input-flex-row">
+    
+    <section class="card-quotes">
+            <h2 align="center"> Bookshelf Apps </h2>
+            <h5 align="center"> By Wendi Kardian</h5>
+            <p>Help you to manage your books, its really helpfull if you want managing book you have'nt read
+                and the book you already read on your rack bock </p>
+            <p class="quotes">“Books are the quietest and most constant of friends; they are the most accessible and wisest of counselors, and the most patient of teachers.” — Charles William Eliot</p>
+
+    </section>
+
+    <section class="input_section">
+        <h2> <img src="img/book-solid.svg" width="15pt" alt=""> New Books</h2>
+        <form id="inputBook">
+            <div class="input">
+                <label for="inputBookTitle">Judul</label>
+                <input id="inputBookTitle" type="text" required>
+            </div>
+            <div class="input">
+                <label for="inputBookAuthor">Penulis</label>
+                <input id="inputBookAuthor" type="text" required>
+            </div>
+            <div class="input">
+                <label for="inputBookYear">Tahun</label>
+                <input id="inputBookYear" type="number" required>
+            </div>
+            <div class="input_inline">
+                <label for="inputBookIsComplete">Selesai dibaca</label>
+                <input id="inputBookIsComplete" type="checkbox" >
+            </div>
+            <button id="bookSubmit" type="submit">Masukkan Buku ke rak <span id="ket">Belum Selesai Baca</span></button>
+        </form>
+    </section>
+
+</div>
+
+
+
+    <section class="search_section">
+        <form id="searchBook">
+            <label for="searchBookTitle"> <h3> Judul </h3></label>
+            <input id="searchBookTitle" type="text" >
+            <button id="searchSubmit" type="submit"><img src="img/search-solid.svg" width ="18pt"  alt=""></button>
+        </form>
+    </section>
+
+
+    <div class="flex-book">
+    <section class="book_shelf">
+        <h2 align="center"> <img src="img/list-alt-regular.svg" width="18pt"  alt=""> Belum selesai dibaca</h2>
+        <div id="incompleteBookshelfList" class="book_list">
+        </div>
+    </section>
+    <section class="book_shelf">
+        <h2 align="center">  <img src="img/check-circle-solid.svg" width="18pt" alt=""> Selesai dibaca</h2>
+        <div id="completeBookshelfList" class="book_list">
+        </div>
+    </section>
+</div>
+</main>
+
+    <script src="js/data.js" type="text/javascript"></script>
+    <script src="js/dom.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>
